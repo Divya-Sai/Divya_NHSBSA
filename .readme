@@ -1,0 +1,17 @@
+selenium Automation Testing Installation Process
+
+1.First Install Java and set Java Home Path in System Variables C:/ProgramFiles/Java/jdk1.8.0.11 Advance System Setting--Environment Variables --System Variables-New-Java_Home C:\Program Files\Java\jdk-18.0.1.1
+
+2.Install Eclipse --Help Market place -Cucumber install and Restart
+
+3.Create a maven project and add below dependency 1.Selenium Java dependency --taken from mvn repostories 2.TestNg- For Assertions 3.Cucumber Java 4.Cucumber-TestNg
+
+4.To run the project outside from the eclipse ...Then Proceed to install maven in your machine-Source Zip archive and unZip it
+
+Then, go to the environment variable settings. For this, right-click on the Windows Start button and select System in the menu. In the new window, click on the Advanced System Settings. You’ll see a pop-up window. Click on the Environment Variables there. Click on New in the new pop-up window in the System variables. Enter MAVEN_HOME (all characters in capital case) in the Variable name field. Paste the copied earlier path to the Maven folder in the Variable value. Click on the OK button.
+
+Chk command prompt and type mvn -version if it is successfully installed ---System displays with version num
+
+Maven Surefile plugin (Pom.xml) is required to run the test cases from outside eclipse
+
+Go to project path and open cmd and mvn test
