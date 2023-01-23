@@ -12,6 +12,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.sql.SQLOutput;
+
 public class steps {
 
     WebDriver driver;
@@ -164,7 +166,8 @@ public class steps {
 
     @Then("User gets result for NHS cost")
     public void user_gets_result_for_NHS_cost() {
-      driver.getPageSource();
+      String Page=  driver.getPageSource();
+        System.out.println(Page);
     }
 
     @Then("Close the browser")
